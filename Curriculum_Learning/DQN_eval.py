@@ -10,19 +10,10 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'Curriculum_Learning'
 # ----------------------------------------
 # Load trained model
 # ----------------------------------------
-# Classic
-# from Classic.trex_env import DinoEnv
-# model_path = os.path.join("Classic", "DQN_fixed_model")
-# model = DQN.load(model_path)
-
-# Curriculum Learning
 from trex_env_cl import DinoEnv
 
 # Choose which model to load:
-# model_path = os.path.join("Curriculum_Learning", "DQN_curriculum", "phase1_final")
-# model_path = os.path.join("Curriculum_Learning", "DQN_curriculum", "phase2_final")
-# model_path = os.path.join("Curriculum_Learning", "DQN_curriculum", "phase3_final")  # Final model
-model_path = os.path.join("Curriculum_Learning", "DQN_0_curriculum", "phase3_final")  # Final model
+model_path = os.path.join("Curriculum_Learning", "DQN_curriculum", "phase3_final")  # Final model
 model = DQN.load(model_path)
 
 # ----------------------------------------
